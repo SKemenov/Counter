@@ -8,12 +8,31 @@
 import UIKit
 
 class MyViewController: UIViewController {
-
+// переменная для подсчета счетчика
+    var mainCounter: Int = 0
+    
+// аутлеты для заголовка счетчика, счетчика, кнопки
+    @IBOutlet weak var buttonToCount: UIButton!
+    @IBOutlet weak var counterTitleText: UILabel!
+    @IBOutlet weak var counterLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+// обнуляем отображение счетчика, скрываем заголовок
+        counterLabel.text = String(mainCounter)
+        counterTitleText.isHidden = true
     }
-
+// метод обработки нажатия на кнопку
+    @IBAction func countButtonPushed(_ sender: Any) {
+// кнопку нажали - счетчик увеличили
+        mainCounter += 1
+        if mainCounter == 1 {
+// если начали считать - показать заголовок счетчика (только в первый раз)
+            counterTitleText.isHidden = false
+        }
+// отобразить новое значение счетчика
+        counterLabel.text = String(mainCounter)
+    }
 
 }
 
