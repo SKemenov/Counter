@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="159" width="430" height="639"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Значение счетчика:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sDk-wc-ruP">
-                                        <rect key="frame" x="25" y="0.0" width="380" height="75"/>
+                                        <rect key="frame" x="30" y="0.0" width="370" height="75"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="75" id="sPQ-CQ-ksN"/>
                                         </constraints>
@@ -29,7 +29,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Counter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G6r-gX-8dV">
-                                        <rect key="frame" x="25" y="282" width="380" height="75"/>
+                                        <rect key="frame" x="30" y="282" width="370" height="75"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="75" id="Pw1-3y-tPC"/>
                                         </constraints>
@@ -38,7 +38,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="icQ-M5-boa">
-                                        <rect key="frame" x="25" y="564" width="380" height="75"/>
+                                        <rect key="frame" x="30" y="564" width="370" height="75"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="75" id="ccn-wY-kw0"/>
                                         </constraints>
@@ -58,22 +58,22 @@
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="icQ-M5-boa" secondAttribute="trailing" constant="25" id="GOI-bS-QNq"/>
-                                    <constraint firstItem="G6r-gX-8dV" firstAttribute="leading" secondItem="Df5-lt-si3" secondAttribute="leading" constant="25" id="HId-tk-W9t"/>
-                                    <constraint firstAttribute="bottom" secondItem="icQ-M5-boa" secondAttribute="bottom" constant="25" id="NEu-2c-c4Q"/>
-                                    <constraint firstItem="sDk-wc-ruP" firstAttribute="leading" secondItem="Df5-lt-si3" secondAttribute="leading" constant="25" id="btZ-OG-qCj"/>
-                                    <constraint firstAttribute="trailing" secondItem="sDk-wc-ruP" secondAttribute="trailing" constant="25" id="fzR-1N-oVK"/>
-                                    <constraint firstAttribute="trailing" secondItem="G6r-gX-8dV" secondAttribute="trailing" constant="25" id="kK2-Wc-VWM"/>
+                                    <constraint firstAttribute="trailing" secondItem="icQ-M5-boa" secondAttribute="trailing" constant="30" id="3TX-uA-0PP"/>
+                                    <constraint firstAttribute="trailing" secondItem="sDk-wc-ruP" secondAttribute="trailing" constant="30" id="M8x-6W-cDO"/>
+                                    <constraint firstItem="icQ-M5-boa" firstAttribute="leading" secondItem="Df5-lt-si3" secondAttribute="leading" constant="30" id="Ssk-HO-K5U"/>
+                                    <constraint firstAttribute="trailing" secondItem="G6r-gX-8dV" secondAttribute="trailing" constant="30" id="cJN-st-9NI"/>
+                                    <constraint firstItem="sDk-wc-ruP" firstAttribute="leading" secondItem="Df5-lt-si3" secondAttribute="leading" constant="30" id="nCA-VS-tgt"/>
+                                    <constraint firstItem="G6r-gX-8dV" firstAttribute="leading" secondItem="Df5-lt-si3" secondAttribute="leading" constant="30" id="xWI-ca-hmu"/>
                                 </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Df5-lt-si3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="0Tg-9s-S8a"/>
-                            <constraint firstItem="Df5-lt-si3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6JX-yc-qN0"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Df5-lt-si3" secondAttribute="trailing" id="KbI-Gy-wiW"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Df5-lt-si3" secondAttribute="bottom" constant="100" id="SDx-bF-hzK"/>
+                            <constraint firstItem="Df5-lt-si3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Vyr-5z-6Mb"/>
+                            <constraint firstItem="Df5-lt-si3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fIb-L5-WsX"/>
+                            <constraint firstItem="Df5-lt-si3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="fdY-2M-uWR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Df5-lt-si3" secondAttribute="bottom" constant="100" id="l49-Bn-ZAe"/>
                         </constraints>
                     </view>
                     <connections>
