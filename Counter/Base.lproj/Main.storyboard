@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,57 +13,58 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MyViewController" customModule="Counter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Df5-lt-si3">
-                                <rect key="frame" x="0.0" y="159" width="393" height="593"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="Df5-lt-si3">
+                                <rect key="frame" x="0.0" y="159" width="430" height="639"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="WUr-BL-ZsY">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="593"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Значение счетчика:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sDk-wc-ruP">
-                                                <rect key="frame" x="25" y="0.0" width="343" height="30"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Counter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G6r-gX-8dV">
-                                                <rect key="frame" x="94.333333333333329" y="238.33333333333329" width="204.66666666666669" height="71.666666666666657"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="icQ-M5-boa">
-                                                <rect key="frame" x="25" y="518" width="343" height="75"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="75" id="ccn-wY-kw0"/>
-                                                </constraints>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" cornerStyle="large">
-                                                    <attributedString key="attributedTitle">
-                                                        <fragment content="Посчитать!">
-                                                            <attributes>
-                                                                <font key="NSFont" metaFont="system" size="24"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
-                                                </buttonConfiguration>
-                                                <connections>
-                                                    <action selector="countButtonPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lpR-Zq-gcG"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Значение счетчика:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sDk-wc-ruP">
+                                        <rect key="frame" x="25" y="0.0" width="380" height="75"/>
                                         <constraints>
-                                            <constraint firstItem="sDk-wc-ruP" firstAttribute="top" secondItem="WUr-BL-ZsY" secondAttribute="top" constant="25" id="50V-DO-M2n"/>
-                                            <constraint firstAttribute="bottom" secondItem="icQ-M5-boa" secondAttribute="bottom" constant="25" id="FmL-gB-jWE"/>
-                                            <constraint firstItem="icQ-M5-boa" firstAttribute="leading" secondItem="WUr-BL-ZsY" secondAttribute="leading" constant="25" id="Q00-3c-4wu"/>
-                                            <constraint firstAttribute="trailing" secondItem="icQ-M5-boa" secondAttribute="trailing" constant="25" id="TPc-tc-WBI"/>
-                                            <constraint firstAttribute="trailing" secondItem="sDk-wc-ruP" secondAttribute="trailing" constant="25" id="XjA-VM-m6t"/>
-                                            <constraint firstItem="sDk-wc-ruP" firstAttribute="leading" secondItem="WUr-BL-ZsY" secondAttribute="leading" constant="25" id="aFB-Mg-cOB"/>
+                                            <constraint firstAttribute="height" constant="75" id="sPQ-CQ-ksN"/>
                                         </constraints>
-                                    </stackView>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Counter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G6r-gX-8dV">
+                                        <rect key="frame" x="25" y="282" width="380" height="75"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="75" id="Pw1-3y-tPC"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="icQ-M5-boa">
+                                        <rect key="frame" x="25" y="564" width="380" height="75"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="75" id="ccn-wY-kw0"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" cornerStyle="large">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Посчитать!">
+                                                    <attributes>
+                                                        <font key="NSFont" metaFont="system" size="24"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="countButtonPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lpR-Zq-gcG"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="icQ-M5-boa" secondAttribute="trailing" constant="25" id="GOI-bS-QNq"/>
+                                    <constraint firstItem="G6r-gX-8dV" firstAttribute="leading" secondItem="Df5-lt-si3" secondAttribute="leading" constant="25" id="HId-tk-W9t"/>
+                                    <constraint firstAttribute="bottom" secondItem="icQ-M5-boa" secondAttribute="bottom" constant="25" id="NEu-2c-c4Q"/>
+                                    <constraint firstItem="sDk-wc-ruP" firstAttribute="leading" secondItem="Df5-lt-si3" secondAttribute="leading" constant="25" id="btZ-OG-qCj"/>
+                                    <constraint firstAttribute="trailing" secondItem="sDk-wc-ruP" secondAttribute="trailing" constant="25" id="fzR-1N-oVK"/>
+                                    <constraint firstAttribute="trailing" secondItem="G6r-gX-8dV" secondAttribute="trailing" constant="25" id="kK2-Wc-VWM"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -72,7 +73,7 @@
                             <constraint firstItem="Df5-lt-si3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="0Tg-9s-S8a"/>
                             <constraint firstItem="Df5-lt-si3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6JX-yc-qN0"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Df5-lt-si3" secondAttribute="trailing" id="KbI-Gy-wiW"/>
-                            <constraint firstAttribute="bottom" secondItem="Df5-lt-si3" secondAttribute="bottom" constant="100" id="SDx-bF-hzK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Df5-lt-si3" secondAttribute="bottom" constant="100" id="SDx-bF-hzK"/>
                         </constraints>
                     </view>
                     <connections>
