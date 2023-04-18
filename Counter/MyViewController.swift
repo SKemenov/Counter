@@ -12,27 +12,60 @@ class MyViewController: UIViewController {
     var mainCounter: Int = 0
     
 // аутлеты для заголовка счетчика, счетчика, кнопки
-    @IBOutlet weak var buttonToCount: UIButton!
-    @IBOutlet weak var counterTitleText: UILabel!
+    @IBOutlet weak var increaseButton: UIButton!
+    @IBOutlet weak var decreaseButton: UIButton!
+    @IBOutlet weak var resetButton: UIButton!
+    @IBOutlet weak var counterTitle: UILabel!
+    @IBOutlet weak var counterLog: UITextView!
     @IBOutlet weak var counterLabel: UILabel!
+    
+    fileprivate func hideCounterTitle() {
+        // скрываем заголовок, делаем белым цветом
+        counterTitle.textColor = .white
+    }
+    
+    fileprivate func updateCounterLabel() {
+        // обнуляем отображение счетчика
+        counterLabel.text = String(mainCounter)
+    }
+    
+    fileprivate func unhideCounterLabel() {
+        counterTitle.textColor = .gray
+
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-// обнуляем отображение счетчика, скрываем заголовок
-        counterLabel.text = String(mainCounter)
-        counterTitleText.textColor = .white
+        updateCounterLabel()
+        hideCounterTitle()
     }
+    
 // метод обработки нажатия на кнопку
-    @IBAction func countButtonPushed(_ sender: Any) {
+    @IBAction func increaseButtonPushed(_ sender: Any) {
 // кнопку нажали - счетчик увеличили
         mainCounter += 1
         if mainCounter == 1 {
 // если начали считать - показать заголовок счетчика (только в первый раз)
-            counterTitleText.textColor = .gray
+            unhideCounterLabel()
         }
 // отобразить новое значение счетчика
-        counterLabel.text = String(mainCounter)
+        updateCounterLabel()
     }
 
+    @IBAction func decreaseButtonPushed(_ sender: Any) {
+        if mainCounter >= 1 {
+            mainCounter -= 1
+        }
+        if mainCounter == 0 {
+            hideCounterTitle()
+        }
+        updateCounterLabel()
+    }
+    
+    @IBAction func resetButtonPushed(_ sender: Any) {
+        hideCounterTitle()
+        mainCounter = 0
+        updateCounterLabel()
+    }
 }
 

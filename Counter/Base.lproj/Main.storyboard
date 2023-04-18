@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_72" orientation="portrait" appearance="light"/>
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,83 +13,92 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MyViewController" customModule="Counter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="Df5-lt-si3">
-                                <rect key="frame" x="0.0" y="159" width="430" height="639"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Значение счетчика:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sDk-wc-ruP">
-                                        <rect key="frame" x="30" y="0.0" width="370" height="75"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="75" id="sPQ-CQ-ksN"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Counter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G6r-gX-8dV">
-                                        <rect key="frame" x="30" y="282" width="370" height="75"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="75" id="Pw1-3y-tPC"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="icQ-M5-boa">
-                                        <rect key="frame" x="30" y="564" width="370" height="75"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="75" id="ccn-wY-kw0"/>
-                                        </constraints>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" cornerStyle="large">
-                                            <attributedString key="attributedTitle">
-                                                <fragment content="Посчитать!">
-                                                    <attributes>
-                                                        <font key="NSFont" metaFont="system" size="24"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <action selector="countButtonPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lpR-Zq-gcG"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="icQ-M5-boa" secondAttribute="trailing" constant="30" id="3TX-uA-0PP"/>
-                                    <constraint firstAttribute="trailing" secondItem="sDk-wc-ruP" secondAttribute="trailing" constant="30" id="M8x-6W-cDO"/>
-                                    <constraint firstItem="icQ-M5-boa" firstAttribute="leading" secondItem="Df5-lt-si3" secondAttribute="leading" constant="30" id="Ssk-HO-K5U"/>
-                                    <constraint firstAttribute="trailing" secondItem="G6r-gX-8dV" secondAttribute="trailing" constant="30" id="cJN-st-9NI"/>
-                                    <constraint firstItem="sDk-wc-ruP" firstAttribute="leading" secondItem="Df5-lt-si3" secondAttribute="leading" constant="30" id="nCA-VS-tgt"/>
-                                    <constraint firstItem="G6r-gX-8dV" firstAttribute="leading" secondItem="Df5-lt-si3" secondAttribute="leading" constant="30" id="xWI-ca-hmu"/>
-                                </constraints>
-                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ors-81-iG0" userLabel="resetButton">
+                                <rect key="frame" x="148" y="84" width="201" height="98"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" image="repeat" catalog="system" cornerStyle="large"/>
+                                <connections>
+                                    <action selector="resetButtonPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ctT-dK-eN2"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Значение счетчика:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sDk-wc-ruP" userLabel="counterTitle">
+                                <rect key="frame" x="25.000000000000014" y="207" width="223.33333333333337" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBrownColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Counter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G6r-gX-8dV" userLabel="counterLabel">
+                                <rect key="frame" x="29.000000000000014" y="332" width="219.33333333333337" height="71.666666666666686"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBrownColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="icQ-M5-boa" userLabel="increaseButton">
+                                <rect key="frame" x="97" y="414.33333333333331" width="47" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" image="plus" catalog="system" cornerStyle="large">
+                                    <attributedString key="attributedTitle"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="increaseButtonPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lpR-Zq-gcG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P6h-hu-zql" userLabel="decreaseButton">
+                                <rect key="frame" x="25" y="414.33333333333331" width="47" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" image="minus" catalog="system" cornerStyle="large"/>
+                                <connections>
+                                    <action selector="decreaseButtonPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g7e-NJ-BOC"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="log trace:" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="i4I-eh-xtT">
+                                <rect key="frame" x="25" y="489.33333333333326" width="353.33333333333331" height="303.66666666666674"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBrownColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="Df5-lt-si3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Vyr-5z-6Mb"/>
-                            <constraint firstItem="Df5-lt-si3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fIb-L5-WsX"/>
-                            <constraint firstItem="Df5-lt-si3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="fdY-2M-uWR"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Df5-lt-si3" secondAttribute="bottom" constant="100" id="l49-Bn-ZAe"/>
-                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="buttonToCount" destination="icQ-M5-boa" id="Wfh-6g-qru"/>
                         <outlet property="counterLabel" destination="G6r-gX-8dV" id="UXb-mM-FW3"/>
-                        <outlet property="counterTitleText" destination="sDk-wc-ruP" id="Q1m-gt-Dwb"/>
+                        <outlet property="counterLog" destination="i4I-eh-xtT" id="dwS-a4-hAs"/>
+                        <outlet property="counterTitle" destination="sDk-wc-ruP" id="Q1m-gt-Dwb"/>
+                        <outlet property="decreaseButton" destination="P6h-hu-zql" id="SmC-Qt-L63"/>
+                        <outlet property="increaseButton" destination="icQ-M5-boa" id="Wfh-6g-qru"/>
+                        <outlet property="resetButton" destination="Ors-81-iG0" id="kfG-HJ-9wA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20.610687022900763" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="19.083969465648853" y="2.8169014084507045"/>
         </scene>
     </scenes>
     <resources>
+        <image name="minus" catalog="system" width="128" height="26"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <image name="repeat" catalog="system" width="128" height="98"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
