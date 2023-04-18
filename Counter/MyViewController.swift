@@ -20,7 +20,7 @@ class MyViewController: UIViewController {
         super.viewDidLoad()
 // обнуляем отображение счетчика, скрываем заголовок
         counterLabel.text = String(mainCounter)
-        counterTitleText.isHidden = true
+        counterTitleText.textColor = .white
     }
 // метод обработки нажатия на кнопку
     @IBAction func countButtonPushed(_ sender: Any) {
@@ -28,7 +28,7 @@ class MyViewController: UIViewController {
         mainCounter += 1
         if mainCounter == 1 {
 // если начали считать - показать заголовок счетчика (только в первый раз)
-            counterTitleText.isHidden = false
+            counterTitleText.textColor = .gray
         }
 // отобразить новое значение счетчика
         counterLabel.text = String(mainCounter)
