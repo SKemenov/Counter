@@ -77,6 +77,7 @@
                             <constraint firstItem="Ors-81-iG0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="03K-Mq-fUX"/>
                             <constraint firstItem="P6h-hu-zql" firstAttribute="width" secondItem="i4I-eh-xtT" secondAttribute="width" multiplier="0.45" id="1Fb-37-ALN"/>
                             <constraint firstItem="sDk-wc-ruP" firstAttribute="trailing" secondItem="i4I-eh-xtT" secondAttribute="trailing" id="7gx-bF-TQv"/>
+                            <constraint firstItem="i4I-eh-xtT" firstAttribute="top" secondItem="P6h-hu-zql" secondAttribute="bottom" constant="29.999999999999943" id="7ia-jL-Zqk"/>
                             <constraint firstItem="Ors-81-iG0" firstAttribute="width" secondItem="i4I-eh-xtT" secondAttribute="width" multiplier="0.45" constant="42" id="7lu-zp-Qtk"/>
                             <constraint firstItem="sDk-wc-ruP" firstAttribute="top" secondItem="Ors-81-iG0" secondAttribute="bottom" constant="30" id="Cq0-9X-QEd"/>
                             <constraint firstItem="i4I-eh-xtT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="E6K-wm-8K1"/>
@@ -84,7 +85,6 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="i4I-eh-xtT" secondAttribute="trailing" constant="14.666666666666686" id="LUv-KG-xb5"/>
                             <constraint firstItem="sDk-wc-ruP" firstAttribute="leading" secondItem="i4I-eh-xtT" secondAttribute="leading" id="QaM-rC-vOE"/>
                             <constraint firstItem="G6r-gX-8dV" firstAttribute="leading" secondItem="i4I-eh-xtT" secondAttribute="leading" id="RQn-EO-e0i"/>
-                            <constraint firstItem="icQ-M5-boa" firstAttribute="baseline" secondItem="P6h-hu-zql" secondAttribute="baseline" id="XX1-y0-uMs"/>
                             <constraint firstItem="icQ-M5-boa" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="P6h-hu-zql" secondAttribute="trailing" constant="8" symbolic="YES" id="Xun-aE-mo4"/>
                             <constraint firstItem="G6r-gX-8dV" firstAttribute="top" secondItem="sDk-wc-ruP" secondAttribute="bottom" constant="30" id="ZHB-q7-0a6"/>
                             <constraint firstItem="icQ-M5-boa" firstAttribute="trailing" secondItem="i4I-eh-xtT" secondAttribute="trailing" id="aQC-ks-0EL"/>
