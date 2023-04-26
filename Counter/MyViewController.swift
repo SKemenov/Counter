@@ -9,15 +9,15 @@ import UIKit
 
 class MyViewController: UIViewController {
 // переменная для подсчета счетчика
-    fileprivate var mainCounter: Int = 0
+    private var mainCounter: Int = 0
     
 // аутлеты для заголовка счетчика, счетчика, кнопок ресет, +, -, текстового поля с логами
-    @IBOutlet fileprivate weak var increaseButton: UIButton!
-    @IBOutlet fileprivate weak var decreaseButton: UIButton!
-    @IBOutlet fileprivate weak var resetButton: UIButton!
-    @IBOutlet fileprivate weak var counterTitle: UILabel!
-    @IBOutlet fileprivate weak var counterLog: UITextView!
-    @IBOutlet fileprivate weak var counterLabel: UILabel!
+    @IBOutlet private weak var increaseButton: UIButton!
+    @IBOutlet private weak var decreaseButton: UIButton!
+    @IBOutlet private weak var resetButton: UIButton!
+    @IBOutlet private weak var counterTitle: UILabel!
+    @IBOutlet private weak var counterLog: UITextView!
+    @IBOutlet private weak var counterLabel: UILabel!
     
 
     override func viewDidLoad() {
@@ -36,24 +36,24 @@ class MyViewController: UIViewController {
     }
     
 // метод скрывающий заголовок счетчика
-    fileprivate func hideCounterTitle() {
+    private func hideCounterTitle() {
         // скрываем заголовок, делаем его белым цветом
         counterTitle.textColor = .white
     }
     
 // метод показывающий заголовок счетчика
-    fileprivate func unhideCounterLabel() {
+    private func unhideCounterLabel() {
         // показываем заголовок, делаем его серым цветом
         counterTitle.textColor = .gray
     }
 
 // метод обновляющий значение счетчика
-    fileprivate func updateCounterLabel() {
+    private func updateCounterLabel() {
         counterLabel.text = String(mainCounter)
     }
     
 // метод добавляющий записи в лог счетчика
-    fileprivate func updateCounterLog(_ withText: String, withDate: Bool) {
+    private func updateCounterLog(_ withText: String, withDate: Bool) {
         var currentDateTime: String
         // если нужно - формируем строку с датой и временем, или пустую строку
         if withDate {
@@ -79,7 +79,7 @@ class MyViewController: UIViewController {
     }
     
 // метод обработки нажатия на кнопку +
-    @IBAction fileprivate func increaseButtonPushed(_ sender: Any) {
+    @IBAction private func increaseButtonPushed(_ sender: Any) {
         // кнопку нажали - счетчик увеличили
         mainCounter += 1
         if mainCounter == 1 {
@@ -92,7 +92,7 @@ class MyViewController: UIViewController {
     }
 
     // метод обработки нажатия на кнопку -
-    @IBAction fileprivate func decreaseButtonPushed(_ sender: Any) {
+    @IBAction private func decreaseButtonPushed(_ sender: Any) {
         if mainCounter >= 1 {
             mainCounter -= 1
             // добавить запись в лог
@@ -108,7 +108,7 @@ class MyViewController: UIViewController {
     }
     
     // метод обработки нажатия на кнопку Ресет
-    @IBAction fileprivate func resetButtonPushed(_ sender: Any) {
+    @IBAction private func resetButtonPushed(_ sender: Any) {
         hideCounterTitle()
         mainCounter = 0
         // добавить запись в лог
